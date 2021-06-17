@@ -34,8 +34,8 @@
           
           <% @books.each do |book| %>
           <tbody>
-            <td><%= attachment_image_tag book, :image_id, format: 'jpeg', fallback: "no_image.jpg",size:'40x40' %></td>
-            <td><%= book.book_title %></td>
+            <td><%= link_to attachment_image_tag(book.user, :profile_image, format: 'jpeg', fallback: "no_image.jpg",size:'40x40'), user_path(book.user.id) %></td>
+            <td><%= link_to book.book_title, book_path(book.id) %></td>
             <td><%= book.opinion %></td>
           </tbody>
           <% end %>

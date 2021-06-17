@@ -3,10 +3,9 @@ Rails.application.routes.draw do
   get "home/about" => "homes#about" , as: "about"
 
   devise_for :users
-  resources :books do
-    resources :users
-  end
-  
+  resources :books
+  resources :users
+
   resources :homes
   
   

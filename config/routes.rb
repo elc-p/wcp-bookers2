@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :books
-  resources :users
+  resources :users, only: [:index, :show, :edit, :update]
 
-  resources :homes
+  resources :homes, only: [:top, :about]
   
   
 end

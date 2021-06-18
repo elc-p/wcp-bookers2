@@ -70,3 +70,8 @@ gem 'bootstrap', '~>4.5'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13'
 gem 'kaminari', '~> 1.2.1'
+
+gem 'capybara', '>= 2.15'
+gem 'rspec-rails'
+gem "factory_bot_rails"
+gem 'faker'

@@ -77,3 +77,8 @@ gem "factory_bot_rails"
 gem 'faker'
 
 gem 'squasher'
+
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
